@@ -13,7 +13,7 @@ struct EmotionListItem: View {
     var body: some View {
         VStack (alignment: .leading) {
             HStack () {
-                Image("joel")
+                Image(emotion.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 48, height: 48)
