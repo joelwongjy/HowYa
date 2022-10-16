@@ -8,15 +8,15 @@
 import SwiftUI
 import MapKit
 
-let park = Park(filename: "CurrentLocation")
+let region = Region(filename: "CurrentLocation")
 let mapView = MKMapView(frame: UIScreen.main.bounds)
 
 struct MapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
-        let latDelta = park.overlayTopLeftCoordinate.latitude - park.overlayBottomRightCoordinate.latitude
+        let latDelta = region.overlayTopLeftCoordinate.latitude - region.overlayBottomRightCoordinate.latitude
         
         let span = MKCoordinateSpan(latitudeDelta: fabs(latDelta), longitudeDelta: 0.0)
-        let region = MKCoordinateRegion(center: park.midCoordinate, span: span)
+        let region = MKCoordinateRegion(center: region.midCoordinate, span: span)
         
         mapView.region = region
         mapView.delegate = context.coordinator
@@ -82,17 +82,17 @@ struct WholeMapView: View {
 
 
 func addOverlay() {
-    let overlay = ParkMapOverlay(park: park)
+    let overlay = ParkMapOverlay(region: region)
     mapView.addOverlay(overlay)
 }
 
 func addAttractionPins() {
     // 1
-    guard let attractions = Park.plist("MagicMountainAttractions") as? [[String: String]] else { return }
+    guard let attractions = Region.plist("HappyLocations") as? [[String: String]] else { return }
     
     // 2
     for attraction in attractions {
-        let coordinate = Park.parseCoord(dict: attraction, fieldName: "location")
+        let coordinate = Region.parseCoord(dict: attraction, fieldName: "location")
         let title = attraction["name"] ?? ""
         let typeRawValue = Int(attraction["type"] ?? "0") ?? 0
         let type = AttractionType(rawValue: typeRawValue) ?? .misc

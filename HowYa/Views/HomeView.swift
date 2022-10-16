@@ -14,14 +14,16 @@ struct HomeView: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .foregroundColor(.black)
                 .font(.custom("Lexend-Bold", size: 32))
-                .padding(.bottom, 28)
+                .padding(.top, 28)
                 .padding(.trailing, 28)
+            Spacer()
             HStack {
                 Image(systemName: "location.north.circle.fill")
                     .font(.system(size: 16))
                 Text("Ponderosa Park")
                     .font(.custom("Lexend-Medium", size: 16))
-            }
+            }            .padding(.horizontal)
+
             
             HStack {
                 Text("Your community is feeling neutral today")
@@ -36,6 +38,7 @@ struct HomeView: View {
             .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
             .padding(.horizontal)
             .padding(.top, 10)
+            Spacer()
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal)

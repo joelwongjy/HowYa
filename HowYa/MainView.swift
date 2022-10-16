@@ -43,6 +43,7 @@ struct MainView: View {
                                 Circle()
                                     .frame(width: geometry.size.width/7, height: geometry.size.width/7)
                                     .shadow(radius: 4)
+                                    .foregroundColor(.white)
                                 Image(systemName: "plus.circle.fill")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
