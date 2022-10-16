@@ -22,6 +22,8 @@ struct MainView: View {
                     HomeView()
                 case .friends:
                     FriendEmotionView()
+                case .create:
+                    AddEmotionView()
                 case .map:
                    AppleParkMap()
                 case .me:
@@ -49,11 +51,8 @@ struct MainView: View {
                                     .rotationEffect(Angle(degrees: showPopUp ? 90 : 0))
                             }
                                 .offset(y: -geometry.size.height/8/2)
-                                .onTapGesture {
-                                    withAnimation {
-                                        showPopUp.toggle()
-                                    }
-                                }
+                        }.onTapGesture {
+                            viewRouter.currentPage = .create
                         }
                         
                         TabBarIcon(viewRouter: viewRouter, assignedPage: .map, width: geometry.size.width/5, height: geometry.size.height/32, systemIconName: "map.fill", tabName: "Map")

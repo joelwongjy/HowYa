@@ -19,6 +19,25 @@ struct Buttons: ViewModifier {
     }
 }
 
+struct EmojiButton: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(height: 60)
+            .frame(maxWidth: .infinity)
+            .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+    }
+}
+
+struct EmojiButtonSelected: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(height: 60)
+            .frame(maxWidth: .infinity)
+            .background(Color("DarkPurple"))
+            .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+    }
+}
+
 
 struct FlightDetailsMenu: ViewModifier {
     var height: Int
