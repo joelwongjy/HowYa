@@ -23,7 +23,9 @@ struct MainView: View {
                 case .friends:
                     FriendEmotionView()
                 case .create:
-                    AddEmotionView()
+                    NavigationView{
+                        ReflectionView()
+                    }
                 case .map:
                    WholeMapView()
                 case .me:

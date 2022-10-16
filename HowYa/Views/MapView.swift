@@ -75,30 +75,39 @@ struct WholeMapView: View {
     
     var body: some View {
         NavigationView {
-            MapView().onAppear(perform: addAttractionPins)
+            MapView().onAppear(perform: self.addAttractionPins)
         }
     }
-}
-
-
-func addOverlay() {
-    let overlay = ParkMapOverlay(region: region)
-    mapView.addOverlay(overlay)
-}
-
-func addAttractionPins() {
-    // 1
-    guard let attractions = Region.plist("HappyLocations") as? [[String: String]] else { return }
     
-    // 2
-    for attraction in attractions {
-        let coordinate = Region.parseCoord(dict: attraction, fieldName: "location")
-        let title = attraction["name"] ?? ""
-        let typeRawValue = Int(attraction["type"] ?? "0") ?? 0
-        let type = AttractionType(rawValue: typeRawValue) ?? .misc
-        let subtitle = attraction["subtitle"] ?? ""
-        // 3
-        let annotation = AttractionAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
-        mapView.addAnnotation(annotation)
+    func addOverlay() {
+        let overlay = ParkMapOverlay(region: region)
+        mapView.addOverlay(overlay)
+    }
+
+    func addAttractionPins() {
+        guard let locations = Region.plist("HappyLocations") as? [[String: String]] else { return }
+        guard let sadLocations = Region.plist("SadLocations") as? [[String: String]] else { return }
+        guard let neutralLocations = Region.plist("NeutralLocations") as? [[String: String]] else { return }
+
+        for location in locations {
+            let coordinate = Region.parseCoord(dict: location, fieldName: "location")
+            let title = location["activity"] ?? ""
+            let annotation = AttractionAnnotation(coordinate: coordinate, title: title, subtitle: "", type: AttractionType.happy)
+            mapView.addAnnotation(annotation)
+        }
+        
+        for location in sadLocations {
+            let coordinate = Region.parseCoord(dict: location, fieldName: "location")
+            let title = location["activity"] ?? ""
+            let annotation = AttractionAnnotation(coordinate: coordinate, title: title, subtitle: "", type: AttractionType.sad)
+            mapView.addAnnotation(annotation)
+        }
+        
+        for location in neutralLocations {
+            let coordinate = Region.parseCoord(dict: location, fieldName: "location")
+            let title = location["feeling"] ?? ""
+            let annotation = AttractionAnnotation(coordinate: coordinate, title: title, subtitle: "", type: AttractionType.neutral)
+            mapView.addAnnotation(annotation)
+        }
     }
 }

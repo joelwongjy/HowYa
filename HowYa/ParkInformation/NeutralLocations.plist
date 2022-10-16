@@ -2,9 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>{37.7797173,-122.3941625}</string>
-	<string>{37.7608987,-122.3910678}</string>
-	<string>{37.7429365,-122.4137461}</string>
-	<string>{37.7861132,-122.3951876}</string>
+	<dict>
+		<key>feeling</key>
+		<string>neutral</string>
+		<key>location</key>
+		<string>{37.7797173,-122.3941625}</string>
+	</dict>
+	<dict>
+		<key>feeling</key>
+		<string>neutral</string>
+		<key>location</key>
+		<string>{37.7608987,-122.3910678}</string>
+	</dict>
+	<dict>
+		<key>feeling</key>
+		<string>neutral</string>
+		<key>location</key>
+		<string>{37.7429365,-122.4137461}</string>
+	</dict>
+	<dict>
+		<key>feeling</key>
+		<string>neutral</string>
+		<key>location</key>
+		<string>{37.7861132,-122.3951876}</string>
+	</dict>
 </array>
 </plist>

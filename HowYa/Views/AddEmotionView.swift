@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct AddEmotionView: View {
-    @State private var progress = 0.0
     @State var selectedEmoji: Emoji = Emoji.happy
     
     var body: some View {
         VStack {
-            ProgressView(value: progress, total: 100)
             Text("HowYa feeling today?")
                 .font(.custom("Lexend-SemiBold", size: 28))
                 .padding(.leading, 20)
@@ -62,14 +60,16 @@ struct AddEmotionView: View {
                     }
             }.padding(.horizontal, 12)
             Spacer()
-            HStack{
-                Spacer()
-                Image(systemName: "chevron.right.2")
-                    .foregroundColor(.white)
-                    .font(.headline)
-                    .modifier(Buttons())
+            NavigationLink(destination: ReflectionView()) {
+                HStack{
+                    Spacer()
+                    Image(systemName: "chevron.right.2")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                        .modifier(Buttons())
+                }
+                .padding()
             }
-            .padding()
         }
     }
 }

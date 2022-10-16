@@ -15,12 +15,13 @@ struct HomeView: View {
                 .foregroundColor(.black)
                 .font(.custom("Lexend-Bold", size: 32))
                 .padding(.top, 28)
+                .padding(.horizontal)
                 .padding(.trailing, 28)
             Spacer()
             HStack {
                 Image(systemName: "location.north.circle.fill")
                     .font(.system(size: 16))
-                Text("Ponderosa Park")
+                Text("Union Square")
                     .font(.custom("Lexend-Medium", size: 16))
             }            .padding(.horizontal)
 

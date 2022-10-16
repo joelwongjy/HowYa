@@ -6,26 +6,24 @@
 //
 
 import MapKit
+import SwiftUI
 
 // 1
 enum AttractionType: Int {
-  case misc = 0
-  case ride
-  case food
-  case firstAid
-
-  func image() -> UIImage {
-    switch self {
-    case .misc:
-      return UIImage(imageLiteralResourceName: "star") // #imageLiteral(resourceName: "star")
-    case .ride:
-      return UIImage(imageLiteralResourceName: "ride") //#imageLiteral(resourceName: "ride")
-    case .food:
-      return UIImage(imageLiteralResourceName: "food") //#imageLiteral(resourceName: "food")
-    case .firstAid:
-      return UIImage(imageLiteralResourceName: "firstaid") //#imageLiteral(resourceName: "firstaid")
+    case happy
+    case sad
+    case neutral
+    
+    func image() -> UIImage {
+        switch self {
+        case .happy:
+            return UIImage(imageLiteralResourceName: "smile").resizeImageTo(size: CGSize(width: 48, height: 48))!
+        case .sad:
+            return UIImage(imageLiteralResourceName: "frown").resizeImageTo(size: CGSize(width: 48, height: 48))!
+        case .neutral:
+            return UIImage(imageLiteralResourceName: "neutral").resizeImageTo(size: CGSize(width: 48, height: 48))!
+        }
     }
-  }
 }
 
 // 2

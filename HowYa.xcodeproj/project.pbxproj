@@ -38,6 +38,8 @@
 		5384BE8228FC7E41007F17C1 /* HappyLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5384BE7C28FC7E41007F17C1 /* HappyLocations.plist */; };
 		5384BE8428FC87DF007F17C1 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE8328FC87DF007F17C1 /* Region.swift */; };
 		5384BE8628FC8992007F17C1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE8528FC8992007F17C1 /* Character.swift */; };
+		5384BE8828FC9400007F17C1 /* DoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE8728FC9400007F17C1 /* DoneView.swift */; };
+		5384BE8B28FC9BEA007F17C1 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE8A28FC9BEA007F17C1 /* UIImage+Resize.swift */; };
 		55D0CACE28FC5B5F009156D4 /* ReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */; };
 		55D0CAD428FC6549009156D4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0CAD328FC6549009156D4 /* UserModel.swift */; };
 /* End PBXBuildFile section */
@@ -76,6 +78,8 @@
 		5384BE7C28FC7E41007F17C1 /* HappyLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HappyLocations.plist; sourceTree = "<group>"; };
 		5384BE8328FC87DF007F17C1 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		5384BE8528FC8992007F17C1 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		5384BE8728FC9400007F17C1 /* DoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneView.swift; sourceTree = "<group>"; };
+		5384BE8A28FC9BEA007F17C1 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionView.swift; sourceTree = "<group>"; };
 		55D0CAD328FC6549009156D4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +114,7 @@
 		5384BDF628FB8B8E007F17C1 /* HowYa */ = {
 			isa = PBXGroup;
 			children = (
+				5384BE8928FC9BCF007F17C1 /* Utilities */,
 				5384BE7628FC7E39007F17C1 /* ParkInformation */,
 				5384BE6828FC7552007F17C1 /* Overlays */,
 				5384BE6528FC2326007F17C1 /* Annotations */,
@@ -151,6 +156,7 @@
 				5384BE4F28FC0D72007F17C1 /* EmotionListItem.swift */,
 				5384BE6328FC1E98007F17C1 /* HomeView.swift */,
 				55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */,
+				5384BE8728FC9400007F17C1 /* DoneView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +216,14 @@
 				5384BE7B28FC7E41007F17C1 /* NeutralLocations.plist */,
 			);
 			path = ParkInformation;
+			sourceTree = "<group>";
+		};
+		5384BE8928FC9BCF007F17C1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5384BE8A28FC9BEA007F17C1 /* UIImage+Resize.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +322,8 @@
 				5384BE6E28FC760C007F17C1 /* ParkMapOverlay.swift in Sources */,
 				5384BE0A28FB96F6007F17C1 /* FriendEmotionView.swift in Sources */,
 				5384BE4A28FBEB66007F17C1 /* MapView.swift in Sources */,
+				5384BE8B28FC9BEA007F17C1 /* UIImage+Resize.swift in Sources */,
+				5384BE8828FC9400007F17C1 /* DoneView.swift in Sources */,
 				5384BE7028FC7610007F17C1 /* ParkMapOverlayView.swift in Sources */,
 				5384BE0728FB957C007F17C1 /* MainView.swift in Sources */,
 				5384BDF828FB8B8E007F17C1 /* HowYaApp.swift in Sources */,
