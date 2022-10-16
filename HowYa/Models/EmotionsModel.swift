@@ -8,6 +8,11 @@
 import Foundation
 import SwiftUI
 
+
+enum Emoji {
+    case happy, slightlyHappy, neutral, slightlySad, sad
+}
+
 struct Emotion {
     let id = UUID()
     let username: String
