@@ -18,16 +18,18 @@ struct EmotionListItem: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 48, height: 48)
                     .clipShape(Circle())
-                VStack (alignment: .leading) {
+                VStack (alignment: .leading, spacing: 0) {
                     HStack {
                         Text(emotion.name)
-                            .font(.custom("Lexend-Regular", size: 14))
+                            .font(.custom("Lexend-SemiBold", size: 18))
                         Spacer()
                         Text(emotion.date, style: .relative)
-                            .font(.custom("Lexend-Regular", size: 18))
+                            .font(.custom("Lexend-Regular", size: 14))
+                        Image(emotion.feeling).resizable()
+                            .aspectRatio(contentMode: .fit).frame(width: 32, height: 32)
                     }
-                    Text(emotion.feeling)
-                        .font(.custom("Lexend-Semibold", size: 18))
+                    Text(emotion.activity)
+                        .font(.custom("Lexend-Light", size: 12))
 
                 }
             }

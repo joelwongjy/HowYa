@@ -22,7 +22,7 @@ struct User {
         self.name = name
         self.password = password
         self.profilePic = profilePic
-        self.friends = friends
+        self.friends = friends 
         self.entries = entries
     }
 }

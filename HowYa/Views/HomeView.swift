@@ -26,11 +26,11 @@ struct HomeView: View {
 
             
             HStack {
-                Text("Your community is feeling neutral today")
+                Text("Your community is feeling happy today")
                           .font(.custom("Lexend-Semibold", size: 24))
 
                 Spacer()
-                Image("neutral").resizable()
+                Image("smile").resizable()
                     .aspectRatio(contentMode: .fit)
             }
             .frame(height: 120)
