@@ -14,10 +14,10 @@ struct User {
     let name: String
     let password: String
     let profilePic: String?
-    let friends: String[]?
-    let entries: Emotion[]?
+    let friends: [String]?
+    let entries: [Emotion]?
     
-    init(email: String, name: String, password: String, profilePic: String? = nil, friends: String[]? = [], entries: Emotion[]? = []) {
+    init(email: String, name: String, password: String, profilePic: String? = nil, friends: [String]? = [], entries: [Emotion]? = []) {
         self.email = email
         self.name = name
         self.password = password
