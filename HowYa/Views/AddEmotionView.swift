@@ -18,6 +18,7 @@ struct AddEmotionView: View {
                 .font(.custom("Lexend-SemiBold", size: 28))
                 .padding(.leading, 20)
                 .padding(.top, 30)
+            Spacer()
             HStack{
                 Image("frown").resizable().aspectRatio(contentMode: .fit)
                     .padding(5)
@@ -62,17 +63,13 @@ struct AddEmotionView: View {
             }.padding(.horizontal, 12)
             Spacer()
             HStack{
-                Text("Next")
-                    .foregroundColor(.white)
-                    .font(.custom("Montserrat-Semibold", size: 16))
                 Spacer()
                 Image(systemName: "chevron.right.2")
                     .foregroundColor(.white)
                     .font(.headline)
+                    .modifier(Buttons())
             }
-            .modifier(Buttons())
-            .padding(.horizontal, 12)
-            .padding(.vertical, 40)
+            .padding()
         }
     }
 }

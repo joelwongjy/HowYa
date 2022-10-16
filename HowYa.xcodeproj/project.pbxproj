@@ -29,6 +29,14 @@
 		5384BE6228FC1BA3007F17C1 /* Lexend-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5384BE5128FC18A1007F17C1 /* Lexend-Thin.ttf */; };
 		5384BE6428FC1E98007F17C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE6328FC1E98007F17C1 /* HomeView.swift */; };
 		5384BE6728FC233B007F17C1 /* EmotionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE6628FC233B007F17C1 /* EmotionAnnotation.swift */; };
+		5384BE6C28FC75DB007F17C1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE6B28FC75DB007F17C1 /* Character.swift */; };
+		5384BE6E28FC760C007F17C1 /* ParkMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE6D28FC760C007F17C1 /* ParkMapOverlay.swift */; };
+		5384BE7028FC7610007F17C1 /* ParkMapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE6F28FC7610007F17C1 /* ParkMapOverlayView.swift */; };
+		5384BE7528FC7821007F17C1 /* EmotionAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE7428FC7821007F17C1 /* EmotionAnnotationView.swift */; };
+		5384BE7E28FC7E41007F17C1 /* CurrentLocation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5384BE7828FC7E41007F17C1 /* CurrentLocation.plist */; };
+		5384BE8028FC7E41007F17C1 /* SadLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5384BE7A28FC7E41007F17C1 /* SadLocations.plist */; };
+		5384BE8128FC7E41007F17C1 /* NeutralLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5384BE7B28FC7E41007F17C1 /* NeutralLocations.plist */; };
+		5384BE8228FC7E41007F17C1 /* HappyLocations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5384BE7C28FC7E41007F17C1 /* HappyLocations.plist */; };
 		55D0CACE28FC5B5F009156D4 /* ReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +65,14 @@
 		5384BE5928FC18A1007F17C1 /* Lexend-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lexend-Light.ttf"; sourceTree = "<group>"; };
 		5384BE6328FC1E98007F17C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5384BE6628FC233B007F17C1 /* EmotionAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionAnnotation.swift; sourceTree = "<group>"; };
+		5384BE6B28FC75DB007F17C1 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		5384BE6D28FC760C007F17C1 /* ParkMapOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkMapOverlay.swift; sourceTree = "<group>"; };
+		5384BE6F28FC7610007F17C1 /* ParkMapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkMapOverlayView.swift; sourceTree = "<group>"; };
+		5384BE7428FC7821007F17C1 /* EmotionAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionAnnotationView.swift; sourceTree = "<group>"; };
+		5384BE7828FC7E41007F17C1 /* CurrentLocation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentLocation.plist; sourceTree = "<group>"; };
+		5384BE7A28FC7E41007F17C1 /* SadLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SadLocations.plist; sourceTree = "<group>"; };
+		5384BE7B28FC7E41007F17C1 /* NeutralLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NeutralLocations.plist; sourceTree = "<group>"; };
+		5384BE7C28FC7E41007F17C1 /* HappyLocations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HappyLocations.plist; sourceTree = "<group>"; };
 		55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +106,8 @@
 		5384BDF628FB8B8E007F17C1 /* HowYa */ = {
 			isa = PBXGroup;
 			children = (
+				5384BE7628FC7E39007F17C1 /* ParkInformation */,
+				5384BE6828FC7552007F17C1 /* Overlays */,
 				5384BE6528FC2326007F17C1 /* Annotations */,
 				5384BE1E28FBB768007F17C1 /* Info.plist */,
 				5384BE0F28FB9A74007F17C1 /* Models */,
@@ -136,6 +154,7 @@
 		5384BE0F28FB9A74007F17C1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5384BE6B28FC75DB007F17C1 /* Character.swift */,
 				5384BE1028FB9A7E007F17C1 /* ViewModifier.swift */,
 				5384BE4728FBBCD7007F17C1 /* EmotionsModel.swift */,
 			);
@@ -162,8 +181,29 @@
 			isa = PBXGroup;
 			children = (
 				5384BE6628FC233B007F17C1 /* EmotionAnnotation.swift */,
+				5384BE7428FC7821007F17C1 /* EmotionAnnotationView.swift */,
 			);
 			path = Annotations;
+			sourceTree = "<group>";
+		};
+		5384BE6828FC7552007F17C1 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				5384BE6D28FC760C007F17C1 /* ParkMapOverlay.swift */,
+				5384BE6F28FC7610007F17C1 /* ParkMapOverlayView.swift */,
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		5384BE7628FC7E39007F17C1 /* ParkInformation */ = {
+			isa = PBXGroup;
+			children = (
+				5384BE7C28FC7E41007F17C1 /* HappyLocations.plist */,
+				5384BE7828FC7E41007F17C1 /* CurrentLocation.plist */,
+				5384BE7A28FC7E41007F17C1 /* SadLocations.plist */,
+				5384BE7B28FC7E41007F17C1 /* NeutralLocations.plist */,
+			);
+			path = ParkInformation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,15 +266,19 @@
 			files = (
 				5384BE6028FC1B9D007F17C1 /* Lexend-Regular.ttf in Resources */,
 				5384BE5E28FC1B97007F17C1 /* Lexend-Light.ttf in Resources */,
+				5384BE8128FC7E41007F17C1 /* NeutralLocations.plist in Resources */,
 				5384BE5D28FC1B95007F17C1 /* Lexend-ExtraBold.ttf in Resources */,
 				5384BE5A28FC1B8C007F17C1 /* Lexend-Black.ttf in Resources */,
 				5384BE5F28FC1B9B007F17C1 /* Lexend-Medium.ttf in Resources */,
 				5384BE6128FC1BA0007F17C1 /* Lexend-SemiBold.ttf in Resources */,
 				5384BE6228FC1BA3007F17C1 /* Lexend-Thin.ttf in Resources */,
 				5384BE5B28FC1B8F007F17C1 /* Lexend-Bold.ttf in Resources */,
+				5384BE8028FC7E41007F17C1 /* SadLocations.plist in Resources */,
+				5384BE8228FC7E41007F17C1 /* HappyLocations.plist in Resources */,
 				5384BDFF28FB8B8F007F17C1 /* Preview Assets.xcassets in Resources */,
 				5384BDFC28FB8B8F007F17C1 /* Assets.xcassets in Resources */,
 				5384BE5C28FC1B92007F17C1 /* Lexend-ExtraLight.ttf in Resources */,
+				5384BE7E28FC7E41007F17C1 /* CurrentLocation.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,11 +293,15 @@
 				55D0CACE28FC5B5F009156D4 /* ReflectionView.swift in Sources */,
 				5384BE1128FB9A7E007F17C1 /* ViewModifier.swift in Sources */,
 				5384BE5028FC0D72007F17C1 /* EmotionListItem.swift in Sources */,
+				5384BE7528FC7821007F17C1 /* EmotionAnnotationView.swift in Sources */,
 				5384BE4C28FBED0D007F17C1 /* AddEmotionView.swift in Sources */,
 				5384BE6428FC1E98007F17C1 /* HomeView.swift in Sources */,
 				5384BE4E28FC04AB007F17C1 /* ViewRouter.swift in Sources */,
+				5384BE6E28FC760C007F17C1 /* ParkMapOverlay.swift in Sources */,
 				5384BE0A28FB96F6007F17C1 /* FriendEmotionView.swift in Sources */,
+				5384BE6C28FC75DB007F17C1 /* Character.swift in Sources */,
 				5384BE4A28FBEB66007F17C1 /* MapView.swift in Sources */,
+				5384BE7028FC7610007F17C1 /* ParkMapOverlayView.swift in Sources */,
 				5384BE0728FB957C007F17C1 /* MainView.swift in Sources */,
 				5384BDF828FB8B8E007F17C1 /* HowYaApp.swift in Sources */,
 				5384BE4828FBBCD7007F17C1 /* EmotionsModel.swift in Sources */,

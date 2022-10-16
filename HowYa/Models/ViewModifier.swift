@@ -11,9 +11,8 @@ import SwiftUI
 struct Buttons: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .padding()
+            .padding(16)
             .frame(height: 60)
-            .frame(maxWidth: .infinity)
             .background(Color.black)
             .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
     }

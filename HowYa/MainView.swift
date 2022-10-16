@@ -25,7 +25,7 @@ struct MainView: View {
                 case .create:
                     AddEmotionView()
                 case .map:
-                   AppleParkMap()
+                   WholeMapView()
                 case .me:
                     Text("Me")
                 }

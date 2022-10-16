@@ -24,19 +24,17 @@ struct HomeView: View {
             }
             
             HStack {
-                Text("Continue")
-                    .foregroundColor(Color.white)
-                          .font(.custom("Lexend-Semibold", size: 16))
+                Text("Your community is feeling neutral today")
+                          .font(.custom("Lexend-Semibold", size: 24))
 
                 Spacer()
-                Image(systemName: "chevron.right.2")
-                    .foregroundColor(Color.white)
-                    .font(.headline)
-                
+                Image("neutral").resizable()
+                    .aspectRatio(contentMode: .fit)
             }
-            .modifier(Buttons())
+            .frame(height: 120)
+            .frame(maxWidth: .infinity)
+            .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
             .padding(.horizontal)
-            .padding(.horizontal, 25)
             .padding(.top, 10)
         }
         .frame(maxWidth: .infinity)
