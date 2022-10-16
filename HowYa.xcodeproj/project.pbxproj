@@ -29,6 +29,7 @@
 		5384BE6228FC1BA3007F17C1 /* Lexend-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5384BE5128FC18A1007F17C1 /* Lexend-Thin.ttf */; };
 		5384BE6428FC1E98007F17C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE6328FC1E98007F17C1 /* HomeView.swift */; };
 		5384BE6728FC233B007F17C1 /* EmotionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE6628FC233B007F17C1 /* EmotionAnnotation.swift */; };
+		55D0CACE28FC5B5F009156D4 /* ReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		5384BE5928FC18A1007F17C1 /* Lexend-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lexend-Light.ttf"; sourceTree = "<group>"; };
 		5384BE6328FC1E98007F17C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5384BE6628FC233B007F17C1 /* EmotionAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionAnnotation.swift; sourceTree = "<group>"; };
+		55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				5384BE4B28FBED0D007F17C1 /* AddEmotionView.swift */,
 				5384BE4F28FC0D72007F17C1 /* EmotionListItem.swift */,
 				5384BE6328FC1E98007F17C1 /* HomeView.swift */,
+				55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5384BE6728FC233B007F17C1 /* EmotionAnnotation.swift in Sources */,
+				55D0CACE28FC5B5F009156D4 /* ReflectionView.swift in Sources */,
 				5384BE1128FB9A7E007F17C1 /* ViewModifier.swift in Sources */,
 				5384BE5028FC0D72007F17C1 /* EmotionListItem.swift in Sources */,
 				5384BE4C28FBED0D007F17C1 /* AddEmotionView.swift in Sources */,
