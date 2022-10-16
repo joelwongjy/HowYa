@@ -22,6 +22,7 @@ extension View {
 
 struct ReflectionView: View {
     @State var reflection: String = ""
+    @State var activity: String = ""
     
     var body: some View {
         ZStack {
@@ -35,6 +36,16 @@ struct ReflectionView: View {
                     TextField(
                         "Write your reflection here...",
                         text: $reflection
+                    ).underlineTextField()
+                }.padding()
+                Text("What are you doing today?")
+                    .foregroundColor(.black)
+                    .font(.custom("Lexend-Bold", size: 28))
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                    TextField(
+                        "Running...",
+                        text: $activity
                     ).underlineTextField()
                 }.padding()
             }
