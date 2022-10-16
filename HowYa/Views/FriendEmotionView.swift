@@ -17,18 +17,13 @@ struct FriendEmotionView: View {
             ScrollView {
                 LazyVGrid(columns: [GridItem()], spacing: 20, content: {
                     ForEach(Emotions, id: \.id) { emotion in
-                        EmotionListView(emotion: emotion)
+                        EmotionListItem(emotion: emotion)
                         Divider()
                     }
                 })
                 .padding(.horizontal, 25)
-               }
-            .background(Color("F2F2F2"))
-        }
-        
-        
-        
-        
+            }
+        } 
     }
 }
 

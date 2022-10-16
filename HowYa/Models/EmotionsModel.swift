@@ -28,8 +28,13 @@ struct Emotion {
 }
 
 let Emotions: [Emotion] = [
-    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete"),
-    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete"),
-    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete"),
-    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete"),
+    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete."),
+    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete."),
+    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete."),
+    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete."),
+    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete."),
+    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete."),
+    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete."),
+    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete."),
+    Emotion(username: "megannesium", name: "Megan Yee", date: Date(), feeling: "Happy as a butterfly", description: "Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete. Today I met Joel so my life is complete."),
 ]
