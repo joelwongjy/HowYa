@@ -30,6 +30,7 @@
 		5384BE6428FC1E98007F17C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE6328FC1E98007F17C1 /* HomeView.swift */; };
 		5384BE6728FC233B007F17C1 /* EmotionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384BE6628FC233B007F17C1 /* EmotionAnnotation.swift */; };
 		55D0CACE28FC5B5F009156D4 /* ReflectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */; };
+		55D0CAD428FC6549009156D4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D0CAD328FC6549009156D4 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		5384BE6328FC1E98007F17C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5384BE6628FC233B007F17C1 /* EmotionAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionAnnotation.swift; sourceTree = "<group>"; };
 		55D0CACD28FC5B5F009156D4 /* ReflectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionView.swift; sourceTree = "<group>"; };
+		55D0CAD328FC6549009156D4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				5384BE1028FB9A7E007F17C1 /* ViewModifier.swift */,
 				5384BE4728FBBCD7007F17C1 /* EmotionsModel.swift */,
+				55D0CAD328FC6549009156D4 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				5384BE1128FB9A7E007F17C1 /* ViewModifier.swift in Sources */,
 				5384BE5028FC0D72007F17C1 /* EmotionListItem.swift in Sources */,
 				5384BE4C28FBED0D007F17C1 /* AddEmotionView.swift in Sources */,
+				55D0CAD428FC6549009156D4 /* UserModel.swift in Sources */,
 				5384BE6428FC1E98007F17C1 /* HomeView.swift in Sources */,
 				5384BE4E28FC04AB007F17C1 /* ViewRouter.swift in Sources */,
 				5384BE0A28FB96F6007F17C1 /* FriendEmotionView.swift in Sources */,

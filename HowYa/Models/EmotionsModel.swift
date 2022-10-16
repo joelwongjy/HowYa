@@ -22,7 +22,7 @@ struct Emotion {
     var feeling: String
     var description: String
     
-    init(username: String, name: String, image: Image? = nil, date: Date, feeling: String, description: String) {
+    init(username: String, name: String, image: String? = nil, date: Date, feeling: String, description: String) {
         self.username = username
         self.name = name
         self.image = image
